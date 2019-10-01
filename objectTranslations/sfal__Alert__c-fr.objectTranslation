@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alerte</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alertes</value>
+    </caseValues>
+    <fields>
+        <label><!-- RecordTypeName --></label>
+        <name>RecordTypeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisee Record --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Contact associated with the advisee record Case doesn&apos;t match the selected advisee Contact. --></errorMessage>
+        </lookupFilter>
+        <name>sfal__AdviseeRecord__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Advisee Contact --></label>
+        <name>sfal__Advisee__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assign Using Active Assignment Rules --></label>
+        <name>sfal__AssignUsingRules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>sfal__Case__c</name>
+        <relationshipLabel><!-- Alert (Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Connection --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Contact associated with the Course Connection doesn&apos;t match the selected advisee Contact. --></errorMessage>
+        </lookupFilter>
+        <name>sfal__CourseConnection__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Closed --></label>
+        <name>sfal__IsClosed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Faible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urgent</masterLabel>
+            <translation>Élevée</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Program Enrollment --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Contact associated with the Program Enrollment doesn&apos;t match the selected advisee Contact. --></errorMessage>
+        </lookupFilter>
+        <name>sfal__ProgramEnrollment__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>sfal__Reason__c</name>
+        <picklistValues>
+            <masterLabel>Academic Integrity</masterLabel>
+            <translation>Intégrité académique</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendance Concern</masterLabel>
+            <translation>Fréquentation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Course Withdraw</masterLabel>
+            <translation><!-- Course Withdraw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failure Concern</masterLabel>
+            <translation>Échec</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Health</masterLabel>
+            <translation>Santé générale</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grade Concern</masterLabel>
+            <translation>Niveau d&apos;étude</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intend to Leave</masterLabel>
+            <translation><!-- Intend to Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Change</masterLabel>
+            <translation><!-- Major Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing/Late Application</masterLabel>
+            <translation>Candidature manquante/en retard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing/Late Assignment</masterLabel>
+            <translation>Attribution manquante/en retard</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Describe in Comments)</masterLabel>
+            <translation>Autre (décrit dans les commentaires)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participation Concern</masterLabel>
+            <translation>Participation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparedness Concern</masterLabel>
+            <translation>Préparation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualification Not Met</masterLabel>
+            <translation>Qualification non remplie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recognition</masterLabel>
+            <translation>Reconnaissance</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Room Change</masterLabel>
+            <translation>Changement de salle</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related To --></label>
+        <name>sfal__RelatedTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sfal__Status__c</name>
+        <picklistValues>
+            <masterLabel>Acknowledged: In Progress</masterLabel>
+            <translation>Confirmé : en cours</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acknowledged: Redirected</masterLabel>
+            <translation>Confirmé : redirigé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: Action Taken</masterLabel>
+            <translation>Fermé : mesure prise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed: No Action Needed</masterLabel>
+            <translation>Fermé : aucune mesure requise</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation>Nouveau</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Alert Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Alerte n°</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Academic --></label>
+        <name>Academic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Career --></label>
+        <name>Career</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial --></label>
+        <name>Financial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Aid --></label>
+        <name>Financial_Aid</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Health --></label>
+        <name>Health</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Housing --></label>
+        <name>Housing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Registration --></label>
+        <name>Registration</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Advisor Link Triggers --></label>
+        <name>sfal__Advisor_Link_Triggers</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

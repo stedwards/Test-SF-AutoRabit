@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>sfal__Topic__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Topic</label>
+        <referenceTo>sfal__Appt_Topic__mdt</referenceTo>
+        <relationshipLabel>Appt Type Topic Mappings Topics</relationshipLabel>
+        <relationshipName>Appt_Type_Topic_Mappings_Topics</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Type</label>
+        <referenceTo>sfal__Appt_Type__mdt</referenceTo>
+        <relationshipLabel>Appt Type Topic Mappings Types</relationshipLabel>
+        <relationshipName>Appt_Type_Topic_Mappings_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>Appt Type Topic Mapping</label>
+    <pluralLabel>Appt Type Topic Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

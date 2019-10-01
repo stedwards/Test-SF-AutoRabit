@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email template is for advisors to send to student to request their approval to release academic/financial information as part of FERPA.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>St_Edward_s_University_University_Advising</letterhead>
+    <name>FERPA Release Authorization Form</name>
+    <style>freeForm</style>
+    <subject>FERPA Release Authorization</subject>
+    <textOnly>Dear {!Case.Contact},
+
+As a student at St. Edward&apos;s University, and according to FERPA regulations, faculty staff may release your student and academic related information only if you&apos;ve authorized that information to be released. Students can grant parents or other proxies access to this information, but this requires student authorization.
+
+If you authorize a parent or other proxy to be able to obtain your student and academic information, please complete the FERPA Release Authorization Form.
+
+Sincerely,
+
+Student &amp; Academic Services
+St. Edward&apos;s University</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Asignación de tipo asesor-cita --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Asignaciones de tipo asesor-cita --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Advisor Type --></label>
+        <name>sfal__Advisor_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Type --></label>
+        <name>sfal__Appt_Type__c</name>
+        <relationshipLabel><!-- Advisor-Appointment Type Mappings --></relationshipLabel>
+    </fields>
+    <gender><!-- Feminine --></gender>
+</CustomObjectTranslation>

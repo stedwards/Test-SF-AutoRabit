@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- When you apply a Success Plan Template, only active tasks are applied. --></help>
+        <label><!-- Active --></label>
+        <name>sfal__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When a Success Plan Template is applied, a Task&apos;s Due Date is set to the current date. To set a Due Date in the future, specify the number of days to use as an offset. --></help>
+        <label><!-- Relative Due Date --></label>
+        <name>sfal__RelativeDueDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Success Plan Template that this task relates to. --></help>
+        <label><!-- Success Plan Template --></label>
+        <name>sfal__SuccessPlanTemplate__c</name>
+        <relationshipLabel><!-- Success Plan Template Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sfal__Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation><!-- Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation><!-- Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Success Plan Template Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

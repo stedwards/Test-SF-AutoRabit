@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Objet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Objets</value>
+    </caseValues>
+    <fields>
+        <help>Le nom de l’objet du rendez-vous. Cette valeur est copiée à partir du nom de l’objet. Pour traduire les valeurs de la liste de sélection, utilisez le Système de traduction.</help>
+        <label><!-- Label --></label>
+        <name>sfal__Label__c</name>
+        <picklistValues>
+            <masterLabel>Option 1</masterLabel>
+            <translation>Option 1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Recherche dans l’enregistrement de l&apos;objet parent.</help>
+        <label><!-- Parent Topic --></label>
+        <name>sfal__ParentTopic__c</name>
+        <relationshipLabel><!-- Subtopics --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L’ordre d’affichage de l’objet dans la liste de sélection. Par exemple, vous pouvez forcer un objet nommé Autre à s’afficher en dernier.</help>
+        <label><!-- Sort Order --></label>
+        <name>sfal__SortOrder__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Topic Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l’objet</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

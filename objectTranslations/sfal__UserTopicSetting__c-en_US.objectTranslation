@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The default appointment duration for the Topic and User. --></help>
+        <label><!-- Default Appointment Duration --></label>
+        <name>sfal__DefaultAppointmentDuration__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup to the associated Topic record. --></help>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+        <relationshipLabel><!-- User Topic Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A lookup to the associated User record. --></help>
+        <label><!-- User --></label>
+        <name>sfal__User__c</name>
+        <relationshipLabel><!-- User Topic Settings --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

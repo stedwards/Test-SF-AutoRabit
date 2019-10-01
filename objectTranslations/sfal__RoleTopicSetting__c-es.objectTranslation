@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de tema de función</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuraciones de temas de funciones</value>
+    </caseValues>
+    <fields>
+        <help>El nombre de la Función de miembro de equipo de caso asociado con el parámetro. Debe coincidir exactamente en la ortografía con el Nombre de la función de miembro del registro Función de miembro de equipo de caso.</help>
+        <label><!-- Role Name --></label>
+        <name>sfal__RoleName__c</name>
+    </fields>
+    <fields>
+        <help>Una búsqueda del registro del tema asociado.</help>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+        <relationshipLabel><!-- Role Topic Settings --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Id. de parámetro</nameFieldLabel>
+</CustomObjectTranslation>

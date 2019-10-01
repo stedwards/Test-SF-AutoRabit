@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Règle d&apos;attribution d&apos;alerte --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Règles d&apos;attribution d&apos;alerte --></value>
+    </caseValues>
+    <fields>
+        <help>Indique si un utilisateur doit être attribué en tant que propriétaire d&apos;alerte dans une équipe de réussite lorsque plusieurs utilisateurs ont le même Rôle éligible au sein de l&apos;équipe. Si cette option est sélectionnée, attribuez la propriété à un seul utilisateur sélectionné de façon aléatoire. Si cette option n&apos;est pas sélectionnée, n&apos;effectuez aucune attribution par rôle.</help>
+        <label><!-- Resolve Multiple Users Per Role --></label>
+        <name>sfal__AssignSingleUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>sfal__IsActive__c</name>
+    </fields>
+    <fields>
+        <help>Indique la propriété de la règle d&apos;attribution par rapport à d&apos;autres règles d&apos;attribution qui s&apos;appliquent au même type d&apos;enregistrement Alerte.</help>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+    </fields>
+    <fields>
+        <help>Le nom d&apos;API de l&apos;enregistrement Alerte auquel cette règle d&apos;attribution applique. Si ce champ est vide, elle s&apos;applique aux alertes avec aucune autre règle d&apos;attribution correspondante pour le type d&apos;enregistrement.</help>
+        <label><!-- Record Type --></label>
+        <name>sfal__RecordType__c</name>
+    </fields>
+    <fields>
+        <help>Le type de rôle de conseiller dans une équipe de réussite qui peut être attribué en tant qu&apos;Alerte avec cette règle d&apos;attribution.</help>
+        <label><!-- Eligible Role --></label>
+        <name>sfal__Role__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ID Salesforce de l&apos;utilisateur ou de la file d&apos;attente qui peut être attribué en tant qu&apos;Alerte avec cette règle d&apos;attribution. Cette condition est évaluée après la correspondance avec des rôles de l&apos;équipe de réussite.</help>
+        <label><!-- Eligible User or Queue --></label>
+        <name>sfal__UserOrQueueId__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <startsWith><!-- Consonant --></startsWith>
+</CustomObjectTranslation>

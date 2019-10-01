@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Controls how queuing works in Salesforce Advisor Link.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>sfal__AdvisingQueueCaseRecordType__c</fullName>
+        <defaultValue>&quot;AdvisingQueue&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Case Record Type</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the Case record type that identifies an Advising Queue Case.</inlineHelpText>
+        <label>Advising Queue Case Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdvisingQueueStatusAbandoned__c</fullName>
+        <defaultValue>&quot;Abandoned&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Status - Abandoned Cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status to use on an Advising Queue Case to represent that the attendee didn&apos;t show up when called or notified.</inlineHelpText>
+        <label>Advising Queue Status - Abandoned Cases</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdvisingQueueStatusFulfilled__c</fullName>
+        <defaultValue>&quot;Fulfilled&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Status - Fulfilled Cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status to use on an Advising Queue Case to represent that the attendee’s request was resolved.</inlineHelpText>
+        <label>Advising Queue Status - Fulfilled Cases</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdvisingQueueStatusQueued__c</fullName>
+        <defaultValue>&quot;Queued&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Status - Queued Cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status to use on an Advising Queue Case to represent that the attendee has been added to the queue and is waiting to see someone.</inlineHelpText>
+        <label>Advising Queue Status - Queued Cases</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdvisingQueueStatusReady__c</fullName>
+        <defaultValue>&quot;Ready&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Status - Ready Cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status to use on an Advising Queue Case to represent that the attendee is ready to meet with someone.</inlineHelpText>
+        <label>Advising Queue Status - Ready Cases</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdvisingQueueStatusReferred__c</fullName>
+        <defaultValue>&quot;Referred&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Advising Queue Status - Referred Cases</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status to use on an Advising Queue Case to represent that the attendee showed up and an Appointment was created.</inlineHelpText>
+        <label>Advising Queue Status - Referred Cases</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAL Queuing Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Location Group --></label>
+        <name>Location_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this activity is an advising appointment, then this represents the topic of the advising appointment, i.e. grade concern, application deadline, etc. --></help>
+        <label><!-- Advising Appointment Topic --></label>
+        <name>sfal__AdvisingApptTopic__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this activity is an advising appointment, then this represents the type of advising appointment, i.e. financial, academic, health, etc. --></help>
+        <label><!-- Advising Appointment Type --></label>
+        <name>sfal__AdvisingApptType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Advising Event --></label>
+        <name>sfal__IsAdvisingEvent__c</name>
+    </fields>
+</CustomObjectTranslation>

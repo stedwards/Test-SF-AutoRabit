@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>sfal__AssignSingleUser__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether to assign a User on a success team as an Alert owner, if multiple Users on the success team have the same Eligible Role. If selected, assign ownership to one User by random selection. If not selected, do not make any assignments by role.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Indicates whether to assign a User on a success team as an Alert owner, if multiple Users on the success team have the same Eligible Role. If selected, assign ownership to one User by random selection. If not selected, do not make any assignments by role.</inlineHelpText>
+        <label>Resolve Multiple Users Per Role</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__IsActive__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether this assignment rule is active.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Priority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates the priority of the assignment rule relative to other assignment rules that apply to the same Alert record type.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Indicates the priority of the assignment rule relative to other assignment rules that apply to the same Alert record type.</inlineHelpText>
+        <label>Priority</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__RecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the Alert record type that this assignment rule applies to. If blank, it applies to Alerts with no other matching assignment rule for their record type.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API name of the Alert record type that this assignment rule applies to. If blank, it applies to Alerts with no other matching assignment rule for their record type.</inlineHelpText>
+        <label>Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Role__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of advising role on a success team that can be assigned an Alert via this assignment rule.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The type of advising role on a success team that can be assigned an Alert via this assignment rule.</inlineHelpText>
+        <label>Eligible Role</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__UserOrQueueId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Salesforce ID of the User or Queue that can be assigned an Alert via this assignment rule. This condition is evaluated after matching success team roles.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Salesforce ID of the User or Queue that can be assigned an Alert via this assignment rule. This condition is evaluated after matching success team roles.</inlineHelpText>
+        <label>Eligible User or Queue</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Alert Assignment Rule</label>
+    <pluralLabel>Alert Assignment Rules</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

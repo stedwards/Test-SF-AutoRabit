@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Advising Pool</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Advising Pools</value>
+    </caseValues>
+    <fields>
+        <label><!-- About --></label>
+        <name>About__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>sfal__Account__c</name>
+        <relationshipLabel><!-- Advising Pools --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>This value must exactly match the value of the predefined case team&apos;s Team Name field. Any mismatch can prevent scheduling with team members.</help>
+        <label><!-- Case Team Name --></label>
+        <name>sfal__CaseTeamName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sfal__Description__c</name>
+    </fields>
+    <layouts>
+        <layout>Advising Pool Layout</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- do not show --></label>
+            <section>do not show</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Student Pool Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Pool Name</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

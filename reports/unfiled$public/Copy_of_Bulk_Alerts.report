@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>sfal__Alert__c.sfal__Reason__c</field>
+    </columns>
+    <columns>
+        <field>sfal__Alert__c.sfal__Priority__c</field>
+    </columns>
+    <columns>
+        <field>sfal__Alert__c.sfal__Status__c</field>
+    </columns>
+    <columns>
+        <field>sfal__Alert__c.sfal__Comments__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>FK_CREATED</field>
+    </columns>
+    <description>Displays bulk alerts created by faculty members</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>sfal__Alert__c.sfal__Advisee__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Bulk Alerts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$sfal__Alert__c@sfal__Alert__c.sfal__CourseConnection__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_NEXT7</interval>
+    </timeFrameFilter>
+</Report>

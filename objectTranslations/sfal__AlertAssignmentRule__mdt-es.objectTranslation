@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Regla de asignación de alerta --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Reglas de asignaciones de alertas --></value>
+    </caseValues>
+    <fields>
+        <help>Indica si se asigna un usuario de un equipo de éxito como un propietario de alerta en el caso de que varios usuarios del equipo de éxito tengan la misma función tangible. Si se selecciona, asigna la propiedad a un usuario con una selección aleatoria. Si no se selecciona, no se realiza ninguna asignación por función.</help>
+        <label><!-- Resolve Multiple Users Per Role --></label>
+        <name>sfal__AssignSingleUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>sfal__IsActive__c</name>
+    </fields>
+    <fields>
+        <help>Indica la prioridad de la regla de asignación relativa a otras reglas de asignación que se aplican al mismo tipo de registro Alerta.</help>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+    </fields>
+    <fields>
+        <help>El nombre de API del tipo de registro Alerta que al que se aplica esta regla de asignación. Si se deja en blanco, se aplica a Alertas sin otra regla de asignación coincidente para sus tipos de registro.</help>
+        <label><!-- Record Type --></label>
+        <name>sfal__RecordType__c</name>
+    </fields>
+    <fields>
+        <help>El tipo de regla de asesoramiento de un equipo de éxito que puede asignarse a una alerta a través de esta regla de asignación.</help>
+        <label><!-- Eligible Role --></label>
+        <name>sfal__Role__c</name>
+    </fields>
+    <fields>
+        <help>El Id. de Salesforce del usuario o cola que puede asignarse a una alerta a través de esta regla de asignación. Esta condición se evalúa después de la coincidencia de funciones de equipos de éxito.</help>
+        <label><!-- Eligible User or Queue --></label>
+        <name>sfal__UserOrQueueId__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+</CustomObjectTranslation>

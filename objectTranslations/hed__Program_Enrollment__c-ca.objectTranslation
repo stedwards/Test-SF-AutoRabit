@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inscripció al programa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inscripcions al programa</value>
+    </caseValues>
+    <fields>
+        <label><!-- External_ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Honors --></label>
+        <name>Honors__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El programa al qual està inscrit l&apos;estudiant.</help>
+        <label><!-- Program --></label>
+        <name>hed__Account__c</name>
+        <relationshipLabel><!-- Program Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Admission Date --></label>
+        <name>hed__Admission_Date__c</name>
+    </fields>
+    <fields>
+        <help>La relació de compte i contacte amb la qual està relacionada aquesta informació acadèmica.</help>
+        <label><!-- Affiliation --></label>
+        <name>hed__Affiliation__c</name>
+        <relationshipLabel><!-- Program Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted Date --></label>
+        <name>hed__Application_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Standing --></label>
+        <name>hed__Class_Standing__c</name>
+        <picklistValues>
+            <masterLabel>Freshman</masterLabel>
+            <translation>Estudiant de primer any</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Junior</masterLabel>
+            <translation>Estudiant de penúltim any</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senior</masterLabel>
+            <translation>Estudiant d&apos;últim any</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sophomore</masterLabel>
+            <translation>Estudiant de segon any</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>El contacte principal.</help>
+        <label><!-- Contact --></label>
+        <name>hed__Contact__c</name>
+        <relationshipLabel><!-- Program Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credits Attempted --></label>
+        <name>hed__Credits_Attempted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credits Earned --></label>
+        <name>hed__Credits_Earned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligible to Enroll --></label>
+        <name>hed__Eligible_to_Enroll__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>hed__End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Status --></label>
+        <name>hed__Enrollment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Full-time</masterLabel>
+            <translation>A temps complet</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Graduated</masterLabel>
+            <translation><!-- Graduated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half-time</masterLabel>
+            <translation>A mitja jornada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than half-time</masterLabel>
+            <translation>Menys de mitja jornada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GPA --></label>
+        <name>hed__GPA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Year --></label>
+        <name>hed__Graduation_Year__c</name>
+    </fields>
+    <fields>
+        <help>Feu clic per seleccionar un pla del programa que hauria de seguir un estudiant per a aquesta inscripció al programa.</help>
+        <label><!-- Program Plan --></label>
+        <name>hed__Program_Plan__c</name>
+        <relationshipLabel><!-- Program Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>hed__Start_Date__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>ID d&apos;inscripció del programa</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

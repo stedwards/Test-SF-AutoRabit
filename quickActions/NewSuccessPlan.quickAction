@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>custom action to be used on the community for allowing student to create their own plans.</description>
+    <fieldOverrides>
+        <field>sfal__Advisee__c</field>
+        <formula>$User.ContactId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>sfal__IsPublished__c</field>
+        <formula>True</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>sfal__Status__c</field>
+        <literalValue>Open</literalValue>
+    </fieldOverrides>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>sfal__Comments__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>sfal__Advisee__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <standardLabel>CreateNew</standardLabel>
+    <successMessage>Plan Created</successMessage>
+    <targetObject>sfal__SuccessPlan__c</targetObject>
+    <targetRecordType>sfal__SuccessPlan__c.Students_Plan</targetRecordType>
+    <type>Create</type>
+</QuickAction>

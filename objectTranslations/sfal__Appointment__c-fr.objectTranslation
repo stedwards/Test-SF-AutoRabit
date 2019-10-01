@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rendez-vous</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rendez-vous</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sfal__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End --></label>
+        <name>sfal__EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sfal__Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated Case record this Appointment originated from. --></help>
+        <label><!-- Related Case --></label>
+        <name>sfal__RelatedCase__c</name>
+        <relationshipLabel><!-- Appointments (Related Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L’enregistrement d’objet secondaire associé pour ce rendez-vous.</help>
+        <label><!-- Related Subtopic --></label>
+        <name>sfal__RelatedSubtopic__c</name>
+        <relationshipLabel><!-- Appointments (Related Subtopic) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>L’enregistrement d’objet associé à ce rendez-vous.</help>
+        <label><!-- Related Topic --></label>
+        <name>sfal__RelatedTopic__c</name>
+        <relationshipLabel><!-- Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>sfal__StartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtopic --></label>
+        <name>sfal__Subtopic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sfal__Type__c</name>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation>Planifié</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk-In</masterLabel>
+            <translation>En accès libre</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Objet du rendez-vous</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- SAL Trigger Sharing --></label>
+        <name>sfal__SALTriggerSharing</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

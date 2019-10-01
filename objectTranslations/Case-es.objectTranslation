@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Advisee Snapshot Details --></label>
+        <name>sfal__CaseAdviseeSnapshotDetails</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Banner Advising Dashboard --></label>
+        <name>Banner_Advising_Dashboard__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banner Term --></label>
+        <name>Banner_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Banner ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Hold --></label>
+        <name>Registration_Hold__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of Case being tracked. --></help>
+        <label><!-- Category --></label>
+        <name>hed__Category__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Code of Conduct</masterLabel>
+            <translation><!-- School Code of Conduct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School Violation</masterLabel>
+            <translation><!-- School Violation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Offense</masterLabel>
+            <translation><!-- State Offense --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The location where the Case took place. --></help>
+        <label><!-- Location --></label>
+        <name>hed__Location__c</name>
+        <picklistValues>
+            <masterLabel>Off Campus</masterLabel>
+            <translation><!-- Off Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Campus</masterLabel>
+            <translation><!-- On Campus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date and time when the behavior event that triggered the Case occurred. --></help>
+        <label><!-- Occurrence Date --></label>
+        <name>hed__Occurrence_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated Advising Pool record for Cases that originated from an Advising Pool. If the Case originated from a Queue owned by a User, this field is blank. --></help>
+        <label><!-- Advising Pool --></label>
+        <name>sfal__AdvisingPool__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Advisee Record --></label>
+        <name>sfal__IsAdviseeRecord__c</name>
+    </fields>
+    <fields>
+        <help><!-- The location where the attendee can meet with someone. --></help>
+        <label><!-- Location --></label>
+        <name>sfal__Location__c</name>
+    </fields>
+    <fields>
+        <help>Cuando se selecciona, el asistente está allí en nombre de alguien, como un progenitor.</help>
+        <label><!-- Proxy --></label>
+        <name>sfal__Proxy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtopic --></label>
+        <name>sfal__Subtopic__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El tema que el asistente desea debatir.</help>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>EDA Incident Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SAL Advisee Record Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Attendance --></label>
+        <name>Attendance_Concern</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Course Withdrawal --></label>
+        <name>Course_Withdrawal</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Grades --></label>
+        <name>Grade_Concerns</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- High-Risk --></label>
+        <name>High_Risk_Failure</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Intent to Leave --></label>
+        <name>Intent_to_Leave</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Used for the SAL product. Used by the Advisors to see the 360 degree view of the student. --></description>
+        <label><!-- Advisee Record --></label>
+        <name>AdviseeRecord</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created as part of SAL for any future use cases where case management is used. --></description>
+        <label><!-- Standard Case --></label>
+        <name>Standard_Case</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- SalMassCreateTask --></label>
+        <name>sfal__SalMassCreateTask</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SalMassSendEmail --></label>
+        <name>sfal__SalMassSendEmail</name>
+    </webLinks>
+</CustomObjectTranslation>

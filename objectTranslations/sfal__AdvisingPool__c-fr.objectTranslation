@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Groupe de conseil</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Groupes de conseil</value>
+    </caseValues>
+    <fields>
+        <label><!-- About --></label>
+        <name>About__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>sfal__Account__c</name>
+        <relationshipLabel><!-- Advising Pools --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Cette valeur doit correspondre exactement à la valeur du champ Nom de l&apos;équipe de l&apos;équipe de requête prédéfinie. Toute divergence peut empêcher la planification avec les membres de l&apos;équipe.</help>
+        <label><!-- Case Team Name --></label>
+        <name>sfal__CaseTeamName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sfal__Description__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Advising Pool Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- do not show --></label>
+            <section>do not show</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Student Pool Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom du groupe</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

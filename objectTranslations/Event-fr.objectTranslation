@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Location Group --></label>
+        <name>Location_Group__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this activity is an advising appointment, then this represents the topic of the advising appointment, i.e. grade concern, application deadline, etc. --></help>
+        <label><!-- Advising Appointment Topic --></label>
+        <name>sfal__AdvisingApptTopic__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this activity is an advising appointment, then this represents the type of advising appointment, i.e. financial, academic, health, etc. --></help>
+        <label><!-- Advising Appointment Type --></label>
+        <name>sfal__AdvisingApptType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Advising Event --></label>
+        <name>sfal__IsAdvisingEvent__c</name>
+    </fields>
+    <layouts>
+        <layout>Event Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- An appointment with a student, becomes blocked out for any Advising Time slots overlap. --></description>
+        <label><!-- Advising Event --></label>
+        <name>AdvisingEvent</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Appointment slot open for accepting appointments. --></description>
+        <label><!-- Advising Time --></label>
+        <name>AdvisingTime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- I’m not available for advising at this time. Normal meetings outside of SAL bookings. --></description>
+        <label><!-- Non-Advising Event --></label>
+        <name>Non_Advising_Event</name>
+    </recordTypes>
+</CustomObjectTranslation>

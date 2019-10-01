@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Advance Notice --></label>
+        <name>sfal__Advance_Notice__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of fields whose values are displayed above the separator in the Advisee Snapshot. Fields are defined in the Advisee Snapshot Details field set. --></help>
+        <label><!-- Advisee Snapshot Headline Fields --></label>
+        <name>sfal__AdviseeSnapshotHeadlineFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use the Advisee Snapshot Details field set to customize the fields that display on the Advisee Snapshot. --></help>
+        <label><!-- Customize Advisee Snapshot Fields --></label>
+        <name>sfal__AdviseeSnapshotUseFieldSet__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Case record type that identifies an advisee record Case. --></help>
+        <label><!-- Advisee Record Case Record Type --></label>
+        <name>sfal__Advisee_Record_RecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Event record type that identifies an advising appointment. --></help>
+        <label><!-- Advising Event Record Type --></label>
+        <name>sfal__Advising_Event_RecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Event record type that identifies the designated times an advisor is available for appointments to be scheduled. --></help>
+        <label><!-- Advising Time Event Record Type --></label>
+        <name>sfal__Advising_Time_Event_RecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Time between back-to-back scheduled appointments to wrap up and prepare for the next. --></help>
+        <label><!-- Appointment Buffer (minutes) --></label>
+        <name>sfal__AppointmentBuffer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Email Opt In --></label>
+        <name>sfal__Appointment_Email_Opt_In__c</name>
+    </fields>
+    <fields>
+        <help><!-- Send email notifications to advisors and advisees when advising appointments are created or cancelled. --></help>
+        <label><!-- Appointment Emails --></label>
+        <name>sfal__Appointment_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Length --></label>
+        <name>sfal__Appointment_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Locations --></label>
+        <name>sfal__Appointment_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chosen Full Name Field --></label>
+        <name>sfal__ChosenFullNameField__c</name>
+    </fields>
+    <fields>
+        <help><!-- When selected, Appointment details displayed in the community don&apos;t include a link that opens the Appointment record detail page. --></help>
+        <label><!-- Disable Advisee Appointment Record Link --></label>
+        <name>sfal__DisableAdviseeAppointmentRecordLink__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email notifications sent to advisees don&apos;t include an .ics file, which is used for calendar updates. --></help>
+        <label><!-- Disable Email Attachments for Advisees --></label>
+        <name>sfal__DisableEmailAttachmentsforAdvisees__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email notifications sent to advisors don&apos;t include an .ics file, which is used for calendar updates. --></help>
+        <label><!-- Disable Email Attachments for Advisors --></label>
+        <name>sfal__DisableEmailAttachmentsforAdvisors__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the Appointment Manager, hide the Add Note action to prevent note-taking that creates Enhanced Notes. --></help>
+        <label><!-- Disable Enhanced Notes --></label>
+        <name>sfal__DisableEnhancedNotes__c</name>
+    </fields>
+    <fields>
+        <help><!-- This ID allows email notifications for appointments to be sent from a default From field. Don&apos;t enter an email address. Use Data Loader or Workbench to get the associated ID for the verified email address you entered on the OrgWideEmailAddress object. --></help>
+        <label><!-- Email ID for Appointment Emails --></label>
+        <name>sfal__EmailIDforAppointmentEmails__c</name>
+    </fields>
+    <fields>
+        <help><!-- On the advisee record Case, display a Change Status button in the Alerts related list to allow mass updates to the status of selected Alerts. --></help>
+        <label><!-- Allow Mass Update in Alerts Related List --></label>
+        <name>sfal__Enable_Alert_Mass_Status_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Event indicating availability for appointments scheduled in advance. --></help>
+        <label><!-- Scheduled Availability Event Type --></label>
+        <name>sfal__ScheduledAvailabilityEventType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Event indicating availability for walk-in appointments. --></help>
+        <label><!-- Walk-In Availability Event Type --></label>
+        <name>sfal__WalkInAvailabilityEventType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of Event indicating walk-in appointments. --></help>
+        <label><!-- Walk-In Appointment Event Type --></label>
+        <name>sfal__WalkIn_Event_Type__c</name>
+    </fields>
+</CustomObjectTranslation>

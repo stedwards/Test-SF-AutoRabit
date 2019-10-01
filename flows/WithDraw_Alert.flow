@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>adds the current sob_alert record to a collection variable</description>
+        <name>Add_to_collection</name>
+        <label>Add to collection</label>
+        <locationX>397</locationX>
+        <locationY>385</locationY>
+        <assignmentItems>
+            <assignToReference>col_Alert</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sob_alert</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Alert</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign alert creation values</description>
+        <name>Set_Alert_values</name>
+        <label>Set Alert values</label>
+        <locationX>396</locationX>
+        <locationY>249</locationY>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Advisee__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>var_contactRecordID</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Case__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sob_case.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sob_recordType.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Priority__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Urgent</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Reason__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Major Change</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__AssignUsingRules__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sob_alert.sfal__Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>System Generated on: {!frm_Now}</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks to see if the contact has an open SAL advisee case</description>
+        <name>Has_SAL_Case</name>
+        <label>Has SAL Case</label>
+        <locationX>214</locationX>
+        <locationY>179</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_outcome</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Find_Record_Type</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Used to check if all input variables are valid, not null</description>
+        <name>Valid_variables</name>
+        <label>Valid variables</label>
+        <locationX>219</locationX>
+        <locationY>60</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>valid_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>var_contactRecordID</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>check_for_case</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <description>When a student withdraws from a program this will create an alert for them.
+
+Input: Contact ID
+
+Changelog:
+Peter Fife May30 2019: Fixed bug for finding SAL case. 
+Peter Fife May6 2019: Initial.</description>
+    <formulas>
+        <description>Current date/time</description>
+        <name>frm_Now</name>
+        <dataType>DateTime</dataType>
+        <expression>Now()</expression>
+    </formulas>
+    <interviewLabel>WithDraw Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WithDraw Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Commits the Alert object to system</description>
+        <name>Create_Alert</name>
+        <label>Create Alert</label>
+        <locationX>572</locationX>
+        <locationY>371</locationY>
+        <inputReference>col_Alert</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Returns the academic record type ID to be used when creating the Alert.</description>
+        <name>Find_Record_Type</name>
+        <label>Find Academic Record Type</label>
+        <locationX>221</locationX>
+        <locationY>375</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Alert_values</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Academic</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputReference>sob_recordType</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>SobjectType</queriedFields>
+    </recordLookups>
+    <startElementReference>Valid_variables</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <name>check_for_case</name>
+        <label>check for case</label>
+        <locationX>406</locationX>
+        <locationY>108</locationY>
+        <connector>
+            <targetReference>Has_SAL_Case</targetReference>
+        </connector>
+        <flowName>Has_SAL_case</flowName>
+        <inputAssignments>
+            <name>var_contactRecordID</name>
+            <value>
+                <elementReference>var_contactRecordID</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>var_outcome</assignToReference>
+            <name>var_outcome</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <description>The collection of alerts, for bulk processing</description>
+        <name>col_Alert</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>sfal__Alert__c</objectType>
+    </variables>
+    <variables>
+        <description>A single value of the alert record.</description>
+        <name>sob_alert</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>sfal__Alert__c</objectType>
+    </variables>
+    <variables>
+        <description>The case record related to the contact.</description>
+        <name>sob_case</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>sob_recordType</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>RecordType</objectType>
+    </variables>
+    <variables>
+        <description>The student&apos;s contact record</description>
+        <name>var_contactRecordID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>used to determine if the case returned true or false</description>
+        <name>var_outcome</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Used to story the proper record type ID.</description>
+        <name>var_recordTypeID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&quot;New&quot;</stringValue>
+        </value>
+    </variables>
+</Flow>

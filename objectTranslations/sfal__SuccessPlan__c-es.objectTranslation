@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan de éxito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planes de éxito</value>
+    </caseValues>
+    <fields>
+        <label><!-- Advisee Record --></label>
+        <lookupFilter>
+            <errorMessage><!-- The Contact associated with the advisee record Case doesn&apos;t match the selected advisee Contact. --></errorMessage>
+        </lookupFilter>
+        <name>sfal__AdviseeRecord__c</name>
+        <relationshipLabel><!-- Success Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Advisee Contact --></label>
+        <name>sfal__Advisee__c</name>
+        <relationshipLabel><!-- Success Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Success Plan Template used to create this Success Plan. --></help>
+        <label><!-- From Template --></label>
+        <name>sfal__FromTemplate__c</name>
+        <relationshipLabel><!-- Success Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancelled --></label>
+        <name>sfal__IsCancelled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Case Advisee Record --></label>
+        <name>sfal__IsCaseAdviseeRecord__c</name>
+    </fields>
+    <fields>
+        <help>Indica si este plan de éxito se incluye en la lista de planes de éxito mostrada al asesorado en la comunidad.</help>
+        <label><!-- Published --></label>
+        <name>sfal__IsPublished__c</name>
+    </fields>
+    <fields>
+        <help>Número de tareas incompletas relacionadas con este plan de éxito.</help>
+        <label><!-- Open Tasks --></label>
+        <name>sfal__NumberOfOpenTasks__c</name>
+    </fields>
+    <fields>
+        <help>Número de tareas incompletas atrasadas relacionadas con este plan de éxito.</help>
+        <label><!-- Overdue Tasks --></label>
+        <name>sfal__NumberOfOverdueTasks__c</name>
+    </fields>
+    <fields>
+        <help>Número total de tareas relacionadas con este plan de éxito, tanto completas como incompletas.</help>
+        <label><!-- Tasks --></label>
+        <name>sfal__NumberOfTasks__c</name>
+    </fields>
+    <fields>
+        <help>Si hay tareas relacionadas incompletas, el estado del plan de éxito se mantiene abierto. En caso contrario, se puede cerrar el plan de éxito como completado o cancelado.</help>
+        <label><!-- Status --></label>
+        <name>sfal__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Cancelado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Completado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Abierto</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Success Plan Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Success Plan Student</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- single --></label>
+            <section>single</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de plan</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Academic --></label>
+        <name>Academic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Career --></label>
+        <name>Career</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Aid --></label>
+        <name>Financial_Aid</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Health --></label>
+        <name>Health</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Housing --></label>
+        <name>Housing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used when the student creates their own plan. --></description>
+        <label><!-- Students Plan --></label>
+        <name>Students_Plan</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- SAL Trigger Sharing --></label>
+        <name>sfal__SAL_Trigger_Sharing</name>
+    </sharingReasons>
+</CustomObjectTranslation>

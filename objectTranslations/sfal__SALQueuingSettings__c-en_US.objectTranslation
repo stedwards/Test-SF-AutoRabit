@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The API name of the Case record type that identifies an Advising Queue Case. --></help>
+        <label><!-- Advising Queue Case Record Type --></label>
+        <name>sfal__AdvisingQueueCaseRecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status to use on an Advising Queue Case to represent that the attendee didn&apos;t show up when called or notified. --></help>
+        <label><!-- Advising Queue Status - Abandoned Cases --></label>
+        <name>sfal__AdvisingQueueStatusAbandoned__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status to use on an Advising Queue Case to represent that the attendee’s request was resolved. --></help>
+        <label><!-- Advising Queue Status - Fulfilled Cases --></label>
+        <name>sfal__AdvisingQueueStatusFulfilled__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status to use on an Advising Queue Case to represent that the attendee has been added to the queue and is waiting to see someone. --></help>
+        <label><!-- Advising Queue Status - Queued Cases --></label>
+        <name>sfal__AdvisingQueueStatusQueued__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status to use on an Advising Queue Case to represent that the attendee is ready to meet with someone. --></help>
+        <label><!-- Advising Queue Status - Ready Cases --></label>
+        <name>sfal__AdvisingQueueStatusReady__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status to use on an Advising Queue Case to represent that the attendee showed up and an Appointment was created. --></help>
+        <label><!-- Advising Queue Status - Referred Cases --></label>
+        <name>sfal__AdvisingQueueStatusReferred__c</name>
+    </fields>
+</CustomObjectTranslation>

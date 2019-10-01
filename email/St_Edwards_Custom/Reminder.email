@@ -1,0 +1,10 @@
+This is a reminder for your upcoming appointment at {!sfal__Appointment__c.sfal__StartDateTime__c}. 
+
+Location: {!sfal__Appointment__c.sfal__Location__c}
+
+Appointment Details: 
+
+Appointment Topic: {!sfal__Appointment__c.sfal__Topic__c}
+Appointment Subtopic: {!sfal__Appointment__c.sfal__Subtopic__c}
+
+If you're unable to attend this appointment, please login to the advising portal and reschedule as soon as possible OR contact the advisor to let them know, thank you.

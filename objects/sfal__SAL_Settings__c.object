@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>sfal__Advance_Notice__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of hours of advance notice required for an appointment.</description>
+        <externalId>false</externalId>
+        <label>Advance Notice</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdviseeSnapshotHeadlineFields__c</fullName>
+        <defaultValue>2</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of fields whose values are displayed above the separator in the Advisee Snapshot. Fields are defined in the Advisee Snapshot Details field set.</inlineHelpText>
+        <label>Advisee Snapshot Headline Fields</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdviseeSnapshotUseFieldSet__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use the Advisee Snapshot Details field set to customize the fields that display on the Advisee Snapshot.</inlineHelpText>
+        <label>Customize Advisee Snapshot Fields</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Advisee_Record_RecordType__c</fullName>
+        <defaultValue>&quot;AdviseeRecord&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The API name of the Case record type that identifies an advisee record Case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the Case record type that identifies an advisee record Case.</inlineHelpText>
+        <label>Advisee Record Case Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Advising_Event_RecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the Event record type that identifies an advising appointment.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the Event record type that identifies an advising appointment.</inlineHelpText>
+        <label>Advising Event Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Advising_Time_Event_RecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the Event record type that identifies the designated times an advisor is available for appointments to be scheduled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the Event record type that identifies the designated times an advisor is available for appointments to be scheduled.</inlineHelpText>
+        <label>Advising Time Event Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AppointmentBuffer__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Time between back-to-back scheduled appointments to wrap up and prepare for the next.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Time between back-to-back scheduled appointments to wrap up and prepare for the next.</inlineHelpText>
+        <label>Appointment Buffer (minutes)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Appointment_Email_Opt_In__c</fullName>
+        <defaultValue>7</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field should only be updated via the advisor settings component.</description>
+        <externalId>false</externalId>
+        <label>Appointment Email Opt In</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Appointment_Emails__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Send email notifications to advisors and advisees when advising appointments are created or cancelled.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Send email notifications to advisors and advisees when advising appointments are created or cancelled.</inlineHelpText>
+        <label>Appointment Emails</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Appointment_Length__c</fullName>
+        <defaultValue>30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Appointment length in minutes</description>
+        <externalId>false</externalId>
+        <label>Appointment Length</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Appointment_Locations__c</fullName>
+        <defaultValue>&quot;In person;By phone&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Appointment Locations</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>sfal__ChosenFullNameField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Display an advisee’s chosen name instead of their legal name in the Advisee Snapshot. Enter the API name of the field used for a chosen name, such as EDA’s ChosenFullNameField__c. If this setting or the specified field is blank, we display the Name field from the Contact record. To display the chosen name in other places, customize the associated page layouts.</description>
+        <externalId>false</externalId>
+        <label>Chosen Full Name Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__DisableAdviseeAppointmentRecordLink__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When selected, Appointment details displayed in the community don&apos;t include a link that opens the Appointment record detail page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>When selected, Appointment details displayed in the community don&apos;t include a link that opens the Appointment record detail page.</inlineHelpText>
+        <label>Disable Advisee Appointment Record Link</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__DisableEmailAttachmentsforAdvisees__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Email notifications sent to advisees don&apos;t include an .ics file, which is used for calendar updates.</inlineHelpText>
+        <label>Disable Email Attachments for Advisees</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__DisableEmailAttachmentsforAdvisors__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Email notifications sent to advisors don&apos;t include an .ics file, which is used for calendar updates.</inlineHelpText>
+        <label>Disable Email Attachments for Advisors</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__DisableEnhancedNotes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the Appointment Manager, hide the Add Note action to prevent note-taking that creates Enhanced Notes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In the Appointment Manager, hide the Add Note action to prevent note-taking that creates Enhanced Notes.</inlineHelpText>
+        <label>Disable Enhanced Notes</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__EmailIDforAppointmentEmails__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This ID allows email notifications for appointments to be sent from a default From field. Don&apos;t enter an email address. Use Data Loader or Workbench to get the associated ID for the verified email address you entered on the OrgWideEmailAddress object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This ID allows email notifications for appointments to be sent from a default From field. Don&apos;t enter an email address. Use Data Loader or Workbench to get the associated ID for the verified email address you entered on the OrgWideEmailAddress object.</inlineHelpText>
+        <label>Email ID for Appointment Emails</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Enable_Alert_Mass_Status_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>On the advisee record Case, display a Change Status button in the Alerts related list to allow mass updates to the status of selected Alerts.</inlineHelpText>
+        <label>Allow Mass Update in Alerts Related List</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__ScheduledAvailabilityEventType__c</fullName>
+        <defaultValue>&quot;Scheduled&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Type of Event indicating availability for appointments scheduled in advance.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Event indicating availability for appointments scheduled in advance.</inlineHelpText>
+        <label>Scheduled Availability Event Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__WalkInAvailabilityEventType__c</fullName>
+        <defaultValue>&quot;Walk-In&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Type of Event indicating availability for walk-in appointments.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Event indicating availability for walk-in appointments.</inlineHelpText>
+        <label>Walk-In Availability Event Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__WalkIn_Event_Type__c</fullName>
+        <defaultValue>&quot;Walk-In Appointment&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Type of Event indicating walk-in appointments.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Event indicating walk-in appointments.</inlineHelpText>
+        <label>Walk-In Appointment Event Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SAL Hierarchy Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

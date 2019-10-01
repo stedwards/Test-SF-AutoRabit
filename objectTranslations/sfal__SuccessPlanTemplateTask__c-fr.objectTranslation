@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tâche du modèle de plan de réussite</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tâches du modèle de plan de réussite</value>
+    </caseValues>
+    <fields>
+        <help>Lorsque vous appliquez un modèle de plan de réussite, seules les tâches actives sont appliquées.</help>
+        <label><!-- Active --></label>
+        <name>sfal__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Élevé</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Faible</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normale</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Lorsqu&apos;un modèle de plan de réussite est appliqué, la date d’échéance d’une tâche est définie sur la date actuelle. Pour définir une date d’échéance ultérieure, spécifiez le nombre de jours à utiliser comme décalage.</help>
+        <label><!-- Relative Due Date --></label>
+        <name>sfal__RelativeDueDate__c</name>
+    </fields>
+    <fields>
+        <help>Le modèle de plan de réussite auquel cette tâche se rapporte.</help>
+        <label><!-- Success Plan Template --></label>
+        <name>sfal__SuccessPlanTemplate__c</name>
+        <relationshipLabel><!-- Success Plan Template Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sfal__Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation>Appel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>E-mail</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation>Réunion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Autre</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Success Plan Template Task Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Sujet</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

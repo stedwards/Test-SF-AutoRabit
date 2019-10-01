@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Alert_Advisor_Owned</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Any users in the advisor role (NOT disability advisors) who owns alerts will be visible to the entire organization.</description>
+        <label>Alert Advisor Owned</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Operations</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>Advisors</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Disability_to_Disability</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares any alerts with the other Disability services.</description>
+        <label>Disability to Disability</label>
+        <sharedTo>
+            <role>Disability_Services</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Disability_Services</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Operations_to_All</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Insuring alerts from the operations are show to everyone.</description>
+        <label>Operations to All</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Operations</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>Operations</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_to_Disability</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share any of the other alerts with the Disability team</description>
+        <label>Share to Disability</label>
+        <sharedTo>
+            <role>Disability_Services</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Operations</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

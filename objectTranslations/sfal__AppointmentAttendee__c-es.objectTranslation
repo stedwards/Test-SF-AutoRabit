@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Asistente a cita</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Asistentes a citas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attendee Email --></label>
+        <name>Attendee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Date/Time --></label>
+        <name>Meeting_Date_Time_Frm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisee Record --></label>
+        <name>sfal__AdviseeRecord__c</name>
+        <relationshipLabel><!-- Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Appointment --></label>
+        <name>sfal__Appointment__c</name>
+        <relationshipLabel><!-- Appointment Attendees --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attendee --></label>
+        <name>sfal__Attendee__c</name>
+        <relationshipLabel><!-- Appointment Attendees (Attendee) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>sfal__Role__c</name>
+        <picklistValues>
+            <masterLabel>Attendee</masterLabel>
+            <translation>Asistente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organizer</masterLabel>
+            <translation>Organizador</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Comments --></label>
+        <name>sfal__StatusComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Updated By --></label>
+        <name>sfal__StatusUpdatedBy__c</name>
+        <relationshipLabel><!-- Appointment Attendees (Status Updated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Updated Date --></label>
+        <name>sfal__StatusUpdatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>sfal__Status__c</name>
+        <picklistValues>
+            <masterLabel>Attending</masterLabel>
+            <translation>Asistiendo a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation>Cancelada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checked In</masterLabel>
+            <translation>Registrado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Show</masterLabel>
+            <translation>No presentado</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Appointment Attendee Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Asistente a cita</nameFieldLabel>
+</CustomObjectTranslation>

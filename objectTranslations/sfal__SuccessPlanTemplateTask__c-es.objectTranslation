@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tarea de Plantilla de Plan de éxito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tareas de Plantillas de Planes de éxito</value>
+    </caseValues>
+    <fields>
+        <help>Cuando aplica una Plantilla de Plan de éxito, solo se aplican las tareas activas.</help>
+        <label><!-- Active --></label>
+        <name>sfal__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Baja</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation>Normal</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Cuando se aplica una Plantilla de Plan de éxito, se establece una Fecha de vencimiento de la tarea en la fecha actual. Para establecer una Fecha de vencimiento en el futuro, especifique el número de días que utilizar como compensación.</help>
+        <label><!-- Relative Due Date --></label>
+        <name>sfal__RelativeDueDate__c</name>
+    </fields>
+    <fields>
+        <help>La Plantilla de Plan de éxito con la que se relaciona esta tarea.</help>
+        <label><!-- Success Plan Template --></label>
+        <name>sfal__SuccessPlanTemplate__c</name>
+        <relationshipLabel><!-- Success Plan Template Tasks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sfal__Type__c</name>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation>Llamada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Correo electrónico</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation>Reunión</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Otro</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Success Plan Template Task Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Asunto</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The name of the Case Team Member Role associated with the setting. Match the exact spelling and casing of the Member Role Name from the associated Case Team Member Role record. --></help>
+        <label><!-- Role Name --></label>
+        <name>sfal__RoleName__c</name>
+    </fields>
+    <fields>
+        <help><!-- A lookup to the associated Topic record. --></help>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+        <relationshipLabel><!-- Role Topic Settings --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The name of the appointment topic. This value is copied from Topic Name. To translate the picklist values, use the Translation Workbench. --></help>
+        <label><!-- Label --></label>
+        <name>sfal__Label__c</name>
+        <picklistValues>
+            <masterLabel>Option 1</masterLabel>
+            <translation><!-- Option 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- A lookup to the parent Topic record. --></help>
+        <label><!-- Parent Topic --></label>
+        <name>sfal__ParentTopic__c</name>
+        <relationshipLabel><!-- Subtopics --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Topic&apos;s display order within the picklist. For example, you can force a topic named Other to display last. --></help>
+        <label><!-- Sort Order --></label>
+        <name>sfal__SortOrder__c</name>
+    </fields>
+    <layouts>
+        <layout>Topic Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates whether to assign a User on a success team as an Alert owner, if multiple Users on the success team have the same Eligible Role. If selected, assign ownership to one User by random selection. If not selected, do not make any assignments by role. --></help>
+        <label><!-- Resolve Multiple Users Per Role --></label>
+        <name>sfal__AssignSingleUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>sfal__IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the priority of the assignment rule relative to other assignment rules that apply to the same Alert record type. --></help>
+        <label><!-- Priority --></label>
+        <name>sfal__Priority__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the Alert record type that this assignment rule applies to. If blank, it applies to Alerts with no other matching assignment rule for their record type. --></help>
+        <label><!-- Record Type --></label>
+        <name>sfal__RecordType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of advising role on a success team that can be assigned an Alert via this assignment rule. --></help>
+        <label><!-- Eligible Role --></label>
+        <name>sfal__Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Salesforce ID of the User or Queue that can be assigned an Alert via this assignment rule. This condition is evaluated after matching success team roles. --></help>
+        <label><!-- Eligible User or Queue --></label>
+        <name>sfal__UserOrQueueId__c</name>
+    </fields>
+</CustomObjectTranslation>

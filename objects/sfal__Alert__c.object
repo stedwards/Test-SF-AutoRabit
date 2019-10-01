@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SalAlertsCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>SalAlertsCompactLayout</fullName>
+        <fields>Name</fields>
+        <fields>sfal__Reason__c</fields>
+        <fields>sfal__Advisee__c</fields>
+        <fields>OwnerId</fields>
+        <fields>sfal__Status__c</fields>
+        <fields>sfal__RelatedTo__c</fields>
+        <fields>sfal__Priority__c</fields>
+        <fields>CreatedById</fields>
+        <label>Advisor Link Alerts Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>RecordTypeName__c</fullName>
+        <externalId>false</externalId>
+        <formula>RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RecordTypeName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__AdviseeRecord__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the advisee record Case associated with the Advisee Contact. Value must match the selected Advisee Contact.</description>
+        <externalId>false</externalId>
+        <label>Advisee Record</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Contact associated with the advisee record Case doesn&apos;t match the selected advisee Contact.</errorMessage>
+            <filterItems>
+                <field>$Source.sfal__Advisee__c</field>
+                <operation>equals</operation>
+                <valueField>Case.ContactId</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Alerts</relationshipLabel>
+        <relationshipName>Alerts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Advisee__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the advisee Contact that the Alert is related to.</description>
+        <externalId>false</externalId>
+        <label>Advisee Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Alerts</relationshipLabel>
+        <relationshipName>Alerts</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sfal__AssignUsingRules__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the Alert can be assigned using assignment rules.</description>
+        <externalId>false</externalId>
+        <label>Assign Using Active Assignment Rules</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Case that the Alert is related to. Cannot specify the advisee record Case.</description>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Alert (Case)</relationshipLabel>
+        <relationshipName>AlertsCase</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comments about the Alert.</description>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>sfal__CourseConnection__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>If specified, must equal the Course Connection associated with the Advisee Contact. If Program Enrollment is specified, Course Connection must be null. Only one or the other of these fields can specify a value.</description>
+        <externalId>false</externalId>
+        <label>Course Connection</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Contact associated with the Course Connection doesn&apos;t match the selected advisee Contact.</errorMessage>
+            <filterItems>
+                <field>$Source.sfal__Advisee__c</field>
+                <operation>equals</operation>
+                <valueField>hed__Course_Enrollment__c.hed__Contact__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>hed__Course_Enrollment__c</referenceTo>
+        <relationshipLabel>Alerts</relationshipLabel>
+        <relationshipName>Alerts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sfal__IsClosed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the Alert is open or closed.</description>
+        <externalId>false</externalId>
+        <label>Is Closed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Priority__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Priority of the Alert.</description>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>sfal__Reason__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>true</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Urgent</fullName>
+                    <default>false</default>
+                    <label>Urgent</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>General Health</controllingFieldValue>
+                <controllingFieldValue>Room Change</controllingFieldValue>
+                <controllingFieldValue>Other (Describe in Comments)</controllingFieldValue>
+                <controllingFieldValue>Intend to Leave</controllingFieldValue>
+                <controllingFieldValue>Major Change</controllingFieldValue>
+                <controllingFieldValue>Hold</controllingFieldValue>
+                <controllingFieldValue>Course Withdraw</controllingFieldValue>
+                <controllingFieldValue>Grade Concern</controllingFieldValue>
+                <controllingFieldValue>Failure Concern</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Assignment</controllingFieldValue>
+                <controllingFieldValue>Attendance Concern</controllingFieldValue>
+                <controllingFieldValue>Participation Concern</controllingFieldValue>
+                <controllingFieldValue>Preparedness Concern</controllingFieldValue>
+                <controllingFieldValue>Academic Integrity</controllingFieldValue>
+                <controllingFieldValue>Recognition</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Application</controllingFieldValue>
+                <controllingFieldValue>Qualification Not Met</controllingFieldValue>
+                <valueName>Normal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Health</controllingFieldValue>
+                <controllingFieldValue>Room Change</controllingFieldValue>
+                <controllingFieldValue>Other (Describe in Comments)</controllingFieldValue>
+                <controllingFieldValue>Intend to Leave</controllingFieldValue>
+                <controllingFieldValue>Major Change</controllingFieldValue>
+                <controllingFieldValue>Hold</controllingFieldValue>
+                <controllingFieldValue>Course Withdraw</controllingFieldValue>
+                <controllingFieldValue>Grade Concern</controllingFieldValue>
+                <controllingFieldValue>Failure Concern</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Assignment</controllingFieldValue>
+                <controllingFieldValue>Attendance Concern</controllingFieldValue>
+                <controllingFieldValue>Participation Concern</controllingFieldValue>
+                <controllingFieldValue>Preparedness Concern</controllingFieldValue>
+                <controllingFieldValue>Academic Integrity</controllingFieldValue>
+                <controllingFieldValue>Recognition</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Application</controllingFieldValue>
+                <controllingFieldValue>Qualification Not Met</controllingFieldValue>
+                <valueName>Urgent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Health</controllingFieldValue>
+                <controllingFieldValue>Room Change</controllingFieldValue>
+                <controllingFieldValue>Other (Describe in Comments)</controllingFieldValue>
+                <controllingFieldValue>Intend to Leave</controllingFieldValue>
+                <controllingFieldValue>Major Change</controllingFieldValue>
+                <controllingFieldValue>Hold</controllingFieldValue>
+                <controllingFieldValue>Course Withdraw</controllingFieldValue>
+                <controllingFieldValue>Grade Concern</controllingFieldValue>
+                <controllingFieldValue>Failure Concern</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Assignment</controllingFieldValue>
+                <controllingFieldValue>Attendance Concern</controllingFieldValue>
+                <controllingFieldValue>Participation Concern</controllingFieldValue>
+                <controllingFieldValue>Preparedness Concern</controllingFieldValue>
+                <controllingFieldValue>Academic Integrity</controllingFieldValue>
+                <controllingFieldValue>Recognition</controllingFieldValue>
+                <controllingFieldValue>Missing/Late Application</controllingFieldValue>
+                <controllingFieldValue>Qualification Not Met</controllingFieldValue>
+                <valueName>Low</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>sfal__ProgramEnrollment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>If specified, must equal the Program Enrollment associated with the Advisee Contact. If Course Connection is specified, Program Enrollment must be null. Only one or the other of these fields can specify a value.</description>
+        <externalId>false</externalId>
+        <label>Program Enrollment</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>The Contact associated with the Program Enrollment doesn&apos;t match the selected advisee Contact.</errorMessage>
+            <filterItems>
+                <field>$Source.sfal__Advisee__c</field>
+                <operation>equals</operation>
+                <valueField>hed__Program_Enrollment__c.hed__Contact__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>hed__Program_Enrollment__c</referenceTo>
+        <relationshipLabel>Alerts</relationshipLabel>
+        <relationshipName>Alerts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>sfal__Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reason for the Alert.</description>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Academic Integrity</fullName>
+                    <default>false</default>
+                    <label>Academic Integrity</label>
+                </value>
+                <value>
+                    <fullName>Attendance Concern</fullName>
+                    <default>false</default>
+                    <label>Attendance Concern</label>
+                </value>
+                <value>
+                    <fullName>Course Withdraw</fullName>
+                    <default>false</default>
+                    <label>Course Withdraw</label>
+                </value>
+                <value>
+                    <fullName>Failure Concern</fullName>
+                    <default>false</default>
+                    <label>Failure Concern</label>
+                </value>
+                <value>
+                    <fullName>General Health</fullName>
+                    <default>false</default>
+                    <label>General Health</label>
+                </value>
+                <value>
+                    <fullName>Grade Concern</fullName>
+                    <default>false</default>
+                    <label>Grade Concern</label>
+                </value>
+                <value>
+                    <fullName>Hold</fullName>
+                    <default>false</default>
+                    <label>Hold</label>
+                </value>
+                <value>
+                    <fullName>Intend to Leave</fullName>
+                    <default>false</default>
+                    <label>Intend to Leave</label>
+                </value>
+                <value>
+                    <fullName>Major Change</fullName>
+                    <default>false</default>
+                    <label>Major Change</label>
+                </value>
+                <value>
+                    <fullName>Missing/Late Application</fullName>
+                    <default>false</default>
+                    <label>Missing/Late Application</label>
+                </value>
+                <value>
+                    <fullName>Missing/Late Assignment</fullName>
+                    <default>false</default>
+                    <label>Missing/Late Assignment</label>
+                </value>
+                <value>
+                    <fullName>Other (Describe in Comments)</fullName>
+                    <default>false</default>
+                    <label>Other (Describe in Comments)</label>
+                </value>
+                <value>
+                    <fullName>Participation Concern</fullName>
+                    <default>false</default>
+                    <label>Participation Concern</label>
+                </value>
+                <value>
+                    <fullName>Preparedness Concern</fullName>
+                    <default>false</default>
+                    <label>Preparedness Concern</label>
+                </value>
+                <value>
+                    <fullName>Qualification Not Met</fullName>
+                    <default>false</default>
+                    <label>Qualification Not Met</label>
+                </value>
+                <value>
+                    <fullName>Recognition</fullName>
+                    <default>false</default>
+                    <label>Recognition</label>
+                </value>
+                <value>
+                    <fullName>Room Change</fullName>
+                    <default>false</default>
+                    <label>Room Change</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>sfal__RelatedTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Displays the hyperlink to either a related Program Enrollment record (if Program Enrollment is specified) or a related Course Connection record (if Course Connection is specified).</description>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(sfal__CourseConnection__c)),
+    HYPERLINK(&apos;/&apos; &amp; sfal__CourseConnection__c,
+    sfal__CourseConnection__r.Name),
+    IF(NOT(ISBLANK(sfal__ProgramEnrollment__c)),
+        HYPERLINK(&quot;/&quot; &amp; sfal__ProgramEnrollment__c,
+        sfal__ProgramEnrollment__r.Name),
+        &quot;&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Related To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfal__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of the Alert.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Acknowledged: In Progress</fullName>
+                    <default>false</default>
+                    <label>Acknowledged: In Progress</label>
+                </value>
+                <value>
+                    <fullName>Acknowledged: Redirected</fullName>
+                    <default>false</default>
+                    <label>Acknowledged: Redirected</label>
+                </value>
+                <value>
+                    <fullName>Closed: Action Taken</fullName>
+                    <default>false</default>
+                    <label>Closed: Action Taken</label>
+                </value>
+                <value>
+                    <fullName>Closed: No Action Needed</fullName>
+                    <default>false</default>
+                    <label>Closed: No Action Needed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Alert</label>
+    <listViews>
+        <fullName>sfal__All</fullName>
+        <columns>NAME</columns>
+        <columns>sfal__Advisee__c</columns>
+        <columns>sfal__AdviseeRecord__c</columns>
+        <columns>sfal__Reason__c</columns>
+        <columns>sfal__Status__c</columns>
+        <columns>sfal__RelatedTo__c</columns>
+        <columns>sfal__Case__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AL-{0000}</displayFormat>
+        <label>Alert #</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Alerts</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Academic</fullName>
+        <active>true</active>
+        <label>Academic</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Academic Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attendance Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course Withdraw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intend to Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Major Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing%2FLate Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participation Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preparedness Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recognition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Career</fullName>
+        <active>true</active>
+        <label>Career</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Missing%2FLate Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recognition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Financial</fullName>
+        <active>true</active>
+        <label>Financial</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Academic Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attendance Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intend to Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Major Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing%2FLate Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing%2FLate Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participation Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preparedness Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recognition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Change</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Financial_Aid</fullName>
+        <active>true</active>
+        <label>Financial Aid</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Missing%2FLate Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Not Met</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Health</fullName>
+        <active>true</active>
+        <label>Health</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>General Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Housing</fullName>
+        <active>true</active>
+        <label>Housing</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Missing%2FLate Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Change</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Registration</fullName>
+        <active>true</active>
+        <label>Registration</label>
+        <picklistValues>
+            <picklist>sfal__Priority__c</picklist>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urgent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Reason__c</picklist>
+            <values>
+                <fullName>Academic Integrity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attendance Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Failure Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intend to Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Major Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing%2FLate Application</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing%2FLate Assignment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Describe in Comments%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participation Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preparedness Concern</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qualification Not Met</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recognition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Change</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sfal__Status__c</picklist>
+            <values>
+                <fullName>Acknowledged%3A In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Acknowledged%3A Redirected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A Action Taken</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed%3A No Action Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>sfal__Advisee__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>sfal__AdviseeRecord__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>sfal__Reason__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>sfal__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>sfal__RelatedTo__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>sfal__Case__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>sfal__Advisee__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>sfal__AdviseeRecord__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>sfal__Reason__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>sfal__Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>sfal__RelatedTo__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>sfal__Case__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>sfal__Advisee__c</searchFilterFields>
+        <searchFilterFields>sfal__AdviseeRecord__c</searchFilterFields>
+        <searchFilterFields>sfal__Reason__c</searchFilterFields>
+        <searchFilterFields>sfal__Status__c</searchFilterFields>
+        <searchFilterFields>sfal__RelatedTo__c</searchFilterFields>
+        <searchFilterFields>sfal__Case__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchResultsAdditionalFields>sfal__Advisee__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>sfal__AdviseeRecord__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>sfal__Reason__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>sfal__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>sfal__RelatedTo__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>sfal__Case__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>sfal__Advisor_Link_Triggers__c</fullName>
+        <label>Advisor Link Triggers</label>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

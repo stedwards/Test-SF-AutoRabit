@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Appointment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Appointments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>sfal__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End --></label>
+        <name>sfal__EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>sfal__Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- The associated Case record this Appointment originated from. --></help>
+        <label><!-- Related Case --></label>
+        <name>sfal__RelatedCase__c</name>
+        <relationshipLabel><!-- Appointments (Related Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>The associated Subtopic record for this Appointment.</help>
+        <label><!-- Related Subtopic --></label>
+        <name>sfal__RelatedSubtopic__c</name>
+        <relationshipLabel><!-- Appointments (Related Subtopic) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>The associated Topic record for this Appointment.</help>
+        <label><!-- Related Topic --></label>
+        <name>sfal__RelatedTopic__c</name>
+        <relationshipLabel><!-- Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>sfal__StartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtopic --></label>
+        <name>sfal__Subtopic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>sfal__Type__c</name>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation>Scheduled</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk-In</masterLabel>
+            <translation>Walk-In</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Appointment Subject</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- SAL Trigger Sharing --></label>
+        <name>sfal__SALTriggerSharing</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

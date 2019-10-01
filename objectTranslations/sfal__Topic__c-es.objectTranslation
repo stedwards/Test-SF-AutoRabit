@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tema</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Temas</value>
+    </caseValues>
+    <fields>
+        <help>En nombre del tema de la cita. Este valor se copia desde Nombre de tema. Para traducir los valores de la lista de selección, utilice el Sistema de traducción.</help>
+        <label><!-- Label --></label>
+        <name>sfal__Label__c</name>
+        <picklistValues>
+            <masterLabel>Option 1</masterLabel>
+            <translation>Opción 1</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Una búsqueda del registro del tema principal.</help>
+        <label><!-- Parent Topic --></label>
+        <name>sfal__ParentTopic__c</name>
+        <relationshipLabel><!-- Subtopics --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>El orden de visualización del tema dentro de la lista de selección. Por ejemplo, puede forzar que un tema denominado Otros se muestre el último.</help>
+        <label><!-- Sort Order --></label>
+        <name>sfal__SortOrder__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Topic Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de tema</nameFieldLabel>
+</CustomObjectTranslation>

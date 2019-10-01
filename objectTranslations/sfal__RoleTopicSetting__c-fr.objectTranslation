@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Paramètre d&apos;objet du rôle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Paramètres d&apos;objet du rôle</value>
+    </caseValues>
+    <fields>
+        <help>Le nom du rôle du membre de l’équipe de la requête associé au paramètre. Faites correspondre l’orthographe exacte du nom du rôle du membre à partir de l’enregistrement du rôle du membre de l’équipe de la requête associé.</help>
+        <label><!-- Role Name --></label>
+        <name>sfal__RoleName__c</name>
+    </fields>
+    <fields>
+        <help>Recherche dans l’enregistrement de l&apos;objet associé.</help>
+        <label><!-- Topic --></label>
+        <name>sfal__Topic__c</name>
+        <relationshipLabel><!-- Role Topic Settings --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>ID de paramètre</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

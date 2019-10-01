@@ -1,0 +1,37 @@
+<apex:page standardController="Case"
+           recordSetVar="cases"
+           extensions="sfal.SendEmailMassActionController">
+    <apex:includeLightning />
+
+    <div id="lightningArea" />
+    
+    <script type="text/javascript">
+        var selectedCaseIds = '{!JSENCODE(selectedIds)}';
+        var appName = '{!JSENCODE(namespace)}:massActionApp';
+        var componentName = '{!JSENCODE(namespace)}:massActionSendEmail';
+
+        $Lightning.use(appName, function() {
+          $Lightning.createComponent(componentName,
+          { caseIds: JSON.parse(selectedCaseIds),
+            listId: '{!JSENCODE(filterId)}' },
+          "lightningArea",
+          function(cmp) {
+              cmp.addEventHandler(
+                    'force:navigateToList',
+                    function (event) {
+                      if (typeof sforce == 'undefined') {
+                        window.location.href = "/500?fcf={!JSENCODE(filterId)}";
+                        return;
+                      }
+
+                      sforce.one.navigateToList(
+                            event.getParams().listViewId,
+                            event.getParams().listViewName,
+                            event.getParams().scope
+                        );
+                    }
+                ); 
+          });
+      });
+    </script>
+</apex:page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>exk42080qbPLsb5AM2p7</issuer>
+    <loginUrl>https://identity.stedwards.edu/app/salesforce-fedid/exk42080qbPLsb5AM2p7/sso/saml</loginUrl>
+    <logoutUrl>https://identity.stedwards.edu</logoutUrl>
+    <name>OKTA SSO Prod</name>
+    <oauthTokenEndpoint>https://stedwards--ardev.my.salesforce.com/services/oauth2/token?so=00D63000000DakM</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>0</requestSignatureMethod>
+    <requestSigningCertId>0P11U000007Cgzu</requestSigningCertId>
+    <salesforceLoginUrl>https://stedwards--ardev.my.salesforce.com?so=00D63000000DakM</salesforceLoginUrl>
+    <samlEntityId>https://stedwards.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDojCCAoqgAwIBAgIGAWIMprlkMA0GCSqGSIb3DQEBCwUAMIGRMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxEjAQBgNVBAMMCXN0ZWR3YXJkczEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0xODAzMDkyMTIzMzVaFw0yODAzMDkyMTI0MzVaMIGRMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxEjAQBgNVBAMMCXN0ZWR3YXJkczEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALirZDvmMEtMXZs5haY3hXjBRy419hfAqRpi8PRLK97uD85g81uh/dyvQyF+XOldwwCfOW7nS+qQr1wfCFFnYU90xYDn8f2H3POBx0djm8T8Bx1ENogWHT+8BwAPVDblvS6JpHaTktYPIzYZhQAjTf5wM14FKmdFAw+WjGYbJ0qFNsMG+zxW5uBhZ9PEXWInoZPsa0IWBfmdgZC2uTplmRmt8ALmTWaHGmtq7zYGXzg/nsj2jluY9p0hXrWqbPE/EkQ2yFvCN5gLiGcGVLdIu6EnyqKOJ3rcQMJyMLd9XOG5y77YYq1Oy9K2RjifeF5X9cPAanz6BBYvJdBoXUDsp3cCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAaiKSTsMIB5Urfe4mxwEh+ckjj9COzXRSewwW6RL3tleSWxrrCEds1fWugy7ghCcCAyPZ1OgFl+YGGsesQTzOxd3r5Gcr1fCD2kPoptWZT0RYuqpnuhDLWpiGznI6iWO4QWHQjx5Iu9z2V5JsCGgRCp92SiOFv5heYSYOYW412Bjlzwg484AMTp8rx8xL1SFXDeHPvRc18hl+Azll4ERijznVU3Nmtc7HOFCR0TtrR1lU13MXhzl9QritKI4EDEljDegKibNEGHIOpCAv6agZON60Cufp2Y8XJv8NanH/gOkqWmqxr0Pxxu1/SXmKGTe7E8ZGwWfVmuoh7spVA9HLlw==</validationCert>
+</SamlSsoConfig>

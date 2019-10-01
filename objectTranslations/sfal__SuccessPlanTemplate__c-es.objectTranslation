@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plantilla de Plan de éxito</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plantillas de Planes de éxito</value>
+    </caseValues>
+    <fields>
+        <help>Para aplicar una Plantilla de Plan de éxito, debe estar activa.</help>
+        <label><!-- Active --></label>
+        <name>sfal__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>sfal__Comments__c</name>
+    </fields>
+    <fields>
+        <help>El número de tareas activas asociadas con esta plantilla.</help>
+        <label><!-- Active Tasks --></label>
+        <name>sfal__TasksActive__c</name>
+    </fields>
+    <fields>
+        <help>El número de veces que se aplicó la Plantilla de Plan de éxito. Este número no incluye el número de veces que se publicó la plantilla (quedó disponible para un asesorado).</help>
+        <label><!-- Usage Count --></label>
+        <name>sfal__UsageCount__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Success Plan Template Layout</layout>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nombre de plantilla del Plan de éxito</nameFieldLabel>
+</CustomObjectTranslation>

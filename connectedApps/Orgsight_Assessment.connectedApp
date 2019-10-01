@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>janspaugh@salesforce.com</contactEmail>
+    <contactPhone>9183887690</contactPhone>
+    <label>Orgsight Assessment</label>
+    <oauthConfig>
+        <callbackUrl>https://seu-prod.herokuapp.com/oauth/_callback</callbackUrl>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Basic</scopes>
+        <scopes>CustomPermissions</scopes>
+    </oauthConfig>
+</ConnectedApp>

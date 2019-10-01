@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectedApp>Orgsight_Assessment</connectedApp>
+    <description>Controls permissions to non-SysAdmin for Orgsight output</description>
+    <label>OrgSight Access</label>
+</CustomPermission>
