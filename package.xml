@@ -1182,6 +1182,7 @@
         <members>Macro.Name</members>
         <members>Macro.OwnerId</members>
         <members>Macro.StartingContext</members>
+        <members>MarkObject__c.Choices__c</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
         <members>Opportunity.CampaignId</members>
@@ -1986,6 +1987,7 @@
         <members>Macro</members>
         <members>MacroAction</members>
         <members>MacroInstruction</members>
+        <members>MarkObject__c</members>
         <members>NetworkMember</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
@@ -2443,6 +2445,7 @@
         <members>Lead-Lead Layout</members>
         <members>ListEmail-List Email Layout</members>
         <members>Macro-Macro Layout</members>
+        <members>MarkObject__c-MarkObject Layout</members>
         <members>Opportunity-Opportunity Layout</members>
         <members>OpportunityLineItem-Opportunity Product Layout</members>
         <members>Order-Order Layout</members>
