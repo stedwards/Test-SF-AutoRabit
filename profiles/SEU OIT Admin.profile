@@ -1851,6 +1851,11 @@
     </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>AR_test_Obj__c.LastName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -5005,6 +5010,9 @@
         <field>sfal__UserTopicSetting__c.sfal__User__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>AR_test_Obj__c-AR test Obj Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Account-hed__HEDA Household Layout</layout>
         <recordType>Account.HH_Account</recordType>

@@ -1851,6 +1851,11 @@
     </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>AR_test_Obj__c.LastName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.AccountNumber</field>
         <readable>false</readable>
@@ -5006,6 +5011,9 @@
         <readable>false</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>AR_test_Obj__c-AR test Obj Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-hed__HEDA Household Layout</layout>
         <recordType>Account.HH_Account</recordType>
     </layoutAssignments>
@@ -7165,6 +7173,10 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SubscribeToLightningReports</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>TraceXdsQueries</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

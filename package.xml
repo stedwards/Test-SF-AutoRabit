@@ -752,6 +752,7 @@
     </types>
     <types>
         <members>AR_test_Obj__c.AR_test_picklist__c</members>
+        <members>AR_test_Obj__c.LastName__c</members>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
         <members>Account.AnnualRevenue</members>
@@ -2415,6 +2416,7 @@
         <name>KeywordList</name>
     </types>
     <types>
+        <members>AR_test_Obj__c-AR test Obj Layout</members>
         <members>Account-Account Layout</members>
         <members>Account-hed__HEDA Household Layout</members>
         <members>Account-hed__HEDA Organization Layout</members>
